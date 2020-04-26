@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           scaffoldBackgroundColor: kBackgroundColor,
           fontFamily: "Poppins",
-          textTheme: TextTheme(body1: TextStyle(color: kBodyTextColor))),
+          textTheme: TextTheme(
+            body1: TextStyle(color: kBodyTextColor),
+          )),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     );
@@ -31,7 +33,10 @@ class HomeScreen extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              MyHeader(image: "assets/icons/Drcorona.svg", textTop: "All you need", textBottom: "is stay at home."),
+              MyHeader(
+                  image: "assets/icons/Drcorona.svg",
+                  textTop: "All you need",
+                  textBottom: "is stay at home."),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 20),
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
@@ -154,7 +159,8 @@ class HomeScreen extends StatelessWidget {
                                 blurRadius: 30,
                                 color: kShadowColor)
                           ]),
-                      child: Image.asset("assets/images/map.png", fit: BoxFit.contain),
+                      child: Image.asset("assets/images/map.png",
+                          fit: BoxFit.contain),
                     )
                   ],
                 ),
